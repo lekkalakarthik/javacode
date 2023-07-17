@@ -6,7 +6,10 @@ pipeline{
         stage('git checkout:git'){
             steps{
 
-            git 'https://github.com/lekkalakarthik/javacode.git'
+            gitcheckout{
+                branch: "master"
+                url: "https://github.com/lekkalakarthik/javacode.git"
+            }
         }
         }
         
