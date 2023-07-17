@@ -8,9 +8,11 @@ pipeline{
         stage('git checkout:git'){
             steps{
 
-            gitcheckout{
-                branch: "master"
+            gitcheckout(
+                branch: "master",
                 url: "https://github.com/lekkalakarthik/javacode.git"
+            )
+                
             }
         }
         }
