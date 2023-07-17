@@ -3,7 +3,7 @@ pipeline{
 
     stages {
 
-        steage('git checkout:git')
+        stage('git checkout:git')
         steps{
 
             git 'https://github.com/lekkalakarthik/javacode.git'
